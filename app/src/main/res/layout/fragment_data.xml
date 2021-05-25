@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/data"
+    android:background="@drawable/background_register_page"
+    tools:context=".Fragments.DataFragment">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COLLECT DATA"
+        android:id="@+id/button_begin"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLOT"
+        android:id="@+id/button_end"
+        android:layout_alignTop="@id/button_begin"
+        android:layout_marginLeft="240dp"
+        android:layout_marginStart="240dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textview_data"
+        android:layout_below="@+id/button_end"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <ListView
+        android:id="@+id/list_data"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_begin"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROFILE"
+        android:id="@+id/sample"
+        android:layout_toRightOf="@id/list_data"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@id/list_data" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rssivalue"
+        android:layout_below="@id/sample"
+        android:layout_alignLeft="@id/sample"
+        android:layout_marginTop="120dp"
+        android:text="RSSI"
+        android:layout_alignStart="@id/sample" />
+</RelativeLayout>
